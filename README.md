@@ -5,7 +5,7 @@ Scrape the WordPress.org global header, footer, and stylesheets.
 ## Usage
 
 ```js
-import { scrapeWpDotOrg } from "../index.mjs"
+import { scrapeWpDotOrg } from "../index.mjs" // This isn't published anywhere yet lol
 
 scrapeWpDotOrg().then(([header, footer, css]) => {})
 ```
