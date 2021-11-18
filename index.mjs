@@ -9,7 +9,7 @@ import { chromium } from "playwright"
  *
  * This is probably extremely brittle and a bad idea.
  */
-;(async () => {
+export async function scrapeWpDotOrg() {
   const browser = await chromium.launch()
   const page = await browser.newPage()
   await page.goto("http://wordpress.org")
@@ -33,4 +33,4 @@ import { chromium } from "playwright"
   await browser.close()
 
   return [header, footer, css]
-})()
+}
